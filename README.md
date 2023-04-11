@@ -40,6 +40,22 @@ The LeaseContract is responsible for managing the rent payments and the interact
 
 ## SDLC process milestones
 
-## Timeline
+- UX/UI : build the visual identity of the brand, think about the user experience, work on the front-end models of the v0
+- Front-end development : work with a full-stack developer to build the front-end of the models, and develop all the off-chain back-end
+- Smart contract development and auditing : finish the development of smart contracts, and have them audited by a specialized company
+- Legal base : work on the legal set-up around our service, and on compliance
+- v0 launch and first customers : Deploy the v0 of the web application, and go in search of the first customers to face the market. Deploy marketing means to convince owners and tenants. 
 
+## Timeline and fundings
+
+| Milestone  | Duration          | Cost (USD) |
+| :--------------- |:---------------:| -----:|
+| UX/UI  |   3 weeks       |  7 000 |
+| Front-end development  | 4 weeks             |   6 000 |
+| Smart contract development and auditing  | 4 weeks          |    20 000 |
+|  Legal base   | 4 weeks          |    15 000 |
+|  v0 launch and first customers   | 4 weeks          |    8 000 |
+
+
+We are seeking a grant of $56,000 to cover the costs of development, security and legal auditing and marketing. This funding will enable us to deliver a high-quality app that meets the needs of our users and addresses the challenges faced in the traditional rent market. We are confident that with the support of the DAO, our dApp can revolutionize the leasing industry and empower landlords, renters, and guarantors alike.
 

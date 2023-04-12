@@ -1,3 +1,5 @@
+The contract has been deployed on Alfajores at this address : 0xDa3D7792C698Cb2377E230A91Ad4aEc04Feab37D
+
 # GuarantEase
 
 Short description

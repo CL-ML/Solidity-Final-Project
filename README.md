@@ -1,12 +1,11 @@
-# Solidity Lease Campaign Project
+# GuarantEase
 
-This project is a decentralized lease campaign system built on top of the Ethereum blockchain using Solidity. It enables a transparent and secure way of managing lease campaigns, proposals, and rent payments. The system consists of three main contracts: CampaignFactory, CampaignContract, and LeaseContract. In this document, we will explain the project in detail, covering the purpose and functionalities of each contract, as well as the tests that ensure their proper operation.
+Short description
 
-## Overview
-
-In the context of leasing properties, both renters and landlords can benefit from a decentralized system that provides transparency, security, and automation. The Solidity Lease Campaign project aims to create such a system by leveraging smart contracts on the Ethereum blockchain.
-
-The system allows a renter to create a campaign for leasing a property. Landlords can then submit proposals for the property, and the renter can accept a proposal. Once a proposal is accepted, a lease contract is automatically created. Guarantors can fund the campaign to cover rent payments, and the landlord can withdraw their rent payments.
+## Team
+- Cedric Lion : Project Lead and Smart contract developer
+- Laetitia Assor : Business development
+- Yangjiawei Xue : javascript test developer
 
 ## Contracts
 
@@ -39,26 +38,24 @@ Enabling the landlord to withdraw the rent amount available for withdrawal. The 
 Allowing the lease contract to send the premium to the CampaignContract after the lease contract finishes. The contract calculates the total premium amount to be paid, checks if the contract balance is sufficient, and sends the premium amount to the CampaignContract. Finally, it changes the premiumPaid status in the CampaignContract.
 The LeaseContract is responsible for managing the rent payments and the interaction between the landlord and the renter, ensuring a secure and transparent leasing process.
 
-## Tests
+## SDLC process milestones
 
-To ensure that the system works as expected, several tests have been developed to cover the main functionalities of each contract.
+- UX/UI : build the visual identity of the brand, think about the user experience, work on the front-end models of the v0
+- Front-end development : work with a full-stack developer to build the front-end of the models, and develop all the off-chain back-end
+- Smart contract development and auditing : finish the development of smart contracts, and have them audited by a specialized company
+- Legal base : work on the legal set-up around our service, and on compliance
+- v0 launch and first customers : Deploy the v0 of the web application, and go in search of the first customers to face the market. Deploy marketing means to convince owners and tenants. 
 
-### CampaignFactory Tests
+## Timeline and fundings
 
-Verify that anyone can create a campaign.
-Confirm that each new campaign is added to the list of campaigns.
+| Milestone  | Duration          | Cost (USD) |
+| :--------------- |:---------------:| -----:|
+| UX/UI  |   3 weeks       |  7 000 |
+| Front-end development  | 4 weeks             |   6 000 |
+| Smart contract development and auditing  | 4 weeks          |    20 000 |
+|  Legal base   | 4 weeks          |    15 000 |
+|  v0 launch and first customers   | 4 weeks          |    8 000 |
 
-### CampaignContract Tests
 
-Test that anyone can fund the campaign and that they cannot withdraw funds if the campaign is not finished.
-Ensure that anyone can submit a rent proposal.
-Verify that only the renter can accept a proposal and that they can only do so if there is enough guarantee to cover all the rents from the proposal.
+We are seeking a grant of $56,000 to cover the costs of development, security and legal auditing and marketing. This funding will enable us to deliver a high-quality app that meets the needs of our users and addresses the challenges faced in the traditional rent market. We are confident that with the support of the DAO, our dApp can revolutionize the leasing industry and empower landlords, renters, and guarantors alike.
 
-### LeaseContract Tests
-
-Check that anyone can add money to pay the rent, and ensure they cannot withdraw it once it is paid.
-Test that the landlord can withdraw rents after a certain amount of time has passed. For example, after two months, the landlord should be able to withdraw two rents.
-
-## Conclusion
-
-The Solidity Lease Campaign project is a decentralized leasing system built on the Ethereum blockchain that offers a transparent, secure, and automated way of managing lease campaigns, proposals, and rent payments. With detailed explanations of each contract, their purpose, functionalities, and tests, this README serves as a comprehensive guide to understanding and using the system effectively.
